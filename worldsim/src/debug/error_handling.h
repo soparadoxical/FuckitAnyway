@@ -1,0 +1,18 @@
+#ifndef ERROR_HANDLING_H
+#define ERROR_HANDLING_H
+
+enum installation_errors
+  {
+    ALLEGRO_INSTALLATION_FAILED,
+    MAIN_DISPLAY_CREATION_FAILED,
+    KEYBOARD_INSTALLATION_FAILED,
+    MOUSE_INSTALLATION_FAILED,
+    ALLEGRO_PRIMITIVES_ADDON_INSTALLATION_FAILED,
+    RENDER_TIMER_FAILED,
+    MEMORY_ALLOCATION_FAILED_OPTIONS,
+    WORLD_CYCLE_TIMER_FAILED
+  };
+
+void handle_installation_error(int code);
+void handle_mainLoop_error(int code);
+#endif
